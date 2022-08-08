@@ -1,0 +1,19 @@
+PROYECTO
+
+En este proyecto, vamos a analizar los datos que demuestran la importancia del lavado de manos, identificando anomalías en los procedimientos médicos.
+
+1. CONOCIENDO LOS DATOS
+
+1.1 Cargue el paquete tidyverse.
+
+```{r}
+install.packages("tidyverse")
+```
+activar la libreria instalada
+
+```{r}
+library(tidyverse)
+```
+
+
+
