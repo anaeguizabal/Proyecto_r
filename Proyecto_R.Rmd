@@ -15,5 +15,16 @@ activar la libreria instalada
 library(tidyverse)
 ```
 
+1.2 Lea el archivo deaths_handwashing.cvs usando read_csv y asígnelo a la variable yearly
 
+```{r}
+yearly <- read.csv('C:\\Users\\GMA30\\Documents\\Nueva carpeta\\Docuemntos\\Proyecto\\deaths_handwashing.csv',header=TRUE, stringsAsFactors=FALSE)
+
+```
+
+1.3 Imprima la variable yearly
+
+```{r}
+yearly
+```
 

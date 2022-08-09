@@ -1,0 +1,17 @@
+punto 1.2 me encontre con un problema 
+read.csv("deaths_handswashing.csv")
+
+error que me dio
+ Error in file(file, "rt") : cannot open the connection
+3.
+file(file, "rt")
+2.
+read.table(file = file, header = header, sep = sep, quote = quote, 
+dec = dec, fill = fill, comment.char = comment.char, ...)
+1.
+read.csv("deaths_handswashing.csv")
+
+lo soluciones mediante el siguiente comando
+
+yearly <- read.csv('C:\\Users\\GMA30\\Documents\\Nueva carpeta\\Docuemntos\\Proyecto\\deaths_handwashing.csv',header=TRUE, stringsAsFactors=FALSE)
+yearly
