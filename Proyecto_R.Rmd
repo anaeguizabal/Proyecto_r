@@ -28,3 +28,38 @@ yearly <- read.csv('C:\\Users\\GMA30\\Documents\\Nueva carpeta\\Docuemntos\\Proy
 yearly
 ```
 
+2. El alarmante número de muertes
+
+2.1. Use mutate para agregar la columna proportion_deaths a yearly, esta nueva columna se
+calculará como la proporción de muertes por número de nacimientos.
+
+```{r}
+yearly <-mutate(yearly, proportion_deaths=deaths/births)
+
+```
+
+2.2. Imprima yearly.
+
+```{r}
+yearly
+```
+
+3. Muerte en las clínicas
+
+3.1. Utilice ggplot para hacer una gráfica lineal de proportion_deaths por año (columna
+year) con una línea por clínica.
+
+```{r}
+library(ggplot2)
+
+ggplot(yearly) +
+    geom_line(aes(x = year, y =  proportion_deaths, group = clinic))
+```
+3.2. Las líneas deben tener colores distintos.
+
+```{r}
+ggplot(yearly) +
+    geom_line(aes(x = year, y =  proportion_deaths, col = clinic))
+```
+
+4. Comienza el lavado de manos
